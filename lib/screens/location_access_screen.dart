@@ -1,4 +1,4 @@
-import 'package:eat_experts/screens/authscreen.dart';
+import 'package:eat_experts/screens/login.dart';
 import 'package:flutter/material.dart';
 
 class LocationAccessScreen extends StatelessWidget {
@@ -17,7 +17,7 @@ class LocationAccessScreen extends StatelessWidget {
               Padding(padding: EdgeInsets.all(8),
               child: Column(children: [
                 Image.asset(
-                  "assets/EE_location.png",
+                  "assets/location.png",
                   height: 300,
                 ),
                 SizedBox(height: 32),
@@ -36,11 +36,11 @@ class LocationAccessScreen extends StatelessWidget {
                       padding: EdgeInsets.all(6),
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
-                        color: Color.fromARGB(255, 154, 90, 203).withOpacity(0.15),
+                        color: Color.fromARGB(255, 13, 13, 13).withOpacity(0.15),
                       ),
                       child: Icon(
                       Icons.delivery_dining_outlined,
-                      color: Color.fromARGB(255, 154, 90, 203),
+                      color: Color.fromARGB(255, 6, 6, 6),
                       size: 30,
                       ),
                     ),
@@ -63,11 +63,11 @@ class LocationAccessScreen extends StatelessWidget {
                       padding: EdgeInsets.all(6),
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
-                        color: Color.fromARGB(255, 154, 90, 203).withOpacity(0.15),
+                        color: Color.fromARGB(255, 8, 8, 8).withOpacity(0.15),
                       ),
                       child: Icon(
                       Icons.store_outlined,
-                      color: Color.fromARGB(255, 154, 90, 203),
+                      color: Color.fromARGB(255, 10, 10, 10),
                       size: 30,
                       ),
                     ),
@@ -90,10 +90,10 @@ class LocationAccessScreen extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder:  (context) => AuthScreen(),));
+                    Navigator.push(context, MaterialPageRoute(builder:  (context) => LoginScreen(),));
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Color.fromARGB(255, 154, 90, 203),
+                    backgroundColor: Color.fromARGB(255, 8, 8, 8),
                     padding: EdgeInsets.symmetric(vertical: 15),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(24),

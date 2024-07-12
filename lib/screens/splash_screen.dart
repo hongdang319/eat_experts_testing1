@@ -23,7 +23,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 154, 90, 203),
+      backgroundColor: Colors.white,
       body: Center(
         child: Image.asset("assets/EatExperts Icon.png", scale: 2,),
       )

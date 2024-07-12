@@ -1,6 +1,9 @@
-import 'package:flutter/material.dart';
 import 'package:eat_experts/screens/splash_screen.dart';
-void main(){
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/material.dart';
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 
